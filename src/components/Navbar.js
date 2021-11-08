@@ -29,6 +29,11 @@ const Nav = () => {
               </li>
             );
           })}
+          <li>
+            <Link to="/checkout">
+              Checkout
+            </Link>
+          </li>
         </ul>
         <CartButtons />
       </div>
