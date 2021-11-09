@@ -1,8 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-const PageHero = () => {
-  return <h4>page hero</h4>
+const PageHero = ({ title }) => {
+  return <Wrapper>
+    <section className="section-center">
+      <h3>
+        <Link to="/">
+          home
+        </Link>
+        / {title}
+      </h3>
+    </section>
+  </Wrapper>
 }
 
 const Wrapper = styled.section`
